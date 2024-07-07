@@ -1,0 +1,31 @@
+@tailwind components;
+@tailwind utilities;
+
+// --- import app.scss file ---
+@import "../styles/app.scss";
+
+/* ----------------------------- */
+/* --- Basic setup --- */
+/* ----------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/* ----------------------------- */
+/* --- Reusable class --- */
+/* ----------------------------- */
+.container {
+  width: 1316px;
+  max-width: 1316px;
+  margin: 0 auto;
+}
