@@ -25,7 +25,7 @@
   }
 
   .banner-left-side {
-    @apply relative top-44 z-20 gap-y-5 flex flex-row flex-wrap justify-around text-white sm:absolute sm:top-auto sm:bottom-[-40px] sm:left-0 sm:right-0 sm:gap-5 lg:flex-col lg:gap-[40px] lg:pl-[18px];
+    @apply relative top-44 z-20 gap-y-5 flex flex-row flex-wrap justify-around text-white sm:absolute sm:top-auto sm:bottom-[-40px] sm:left-0 sm:right-0 sm:gap-5 lg:flex-col lg:gap-[40px] lg:pl-[40px];
   }
 
   .banner-content {
@@ -86,6 +86,63 @@
       .banner-content {
         top: 60px;
         transform: translate(-50%, 0%);
+      }
+    }
+  }
+}
+
+// --- all companies section ---
+.all-companies {
+  @apply mt-[60px] bg-white rounded-[20px];
+
+  .company-search-input {
+    padding: 17px 0;
+    padding-right: 19px;
+    padding-left: 52px;
+    border: 1px solid #dadada;
+    outline: none;
+    border-radius: 10px;
+    font-size: 24px;
+    font-family: "Nantes";
+    color: #191618;
+    font-weight: 400;
+    background-color: #f3f3f3;
+    width: 100%;
+  }
+  .company-table-data {
+    .p-datatable {
+      .p-datatable-wrapper {
+        thead {
+          tr {
+            th {
+              background: #fff;
+              border: none;
+              padding: 15px 15px;
+              font-weight: 400;
+              color: #000;
+              font-size: 14px;
+              &:first-child {
+                font-size: 16px;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+        tbody {
+          tr {
+            background: #f3f3f3;
+
+            &.p-row-odd {
+              background: #fff;
+            }
+            td {
+              padding: 15px 15px;
+              border: none;
+              font-family: "Nantes";
+              font-size: 16px;
+            }
+          }
+        }
       }
     }
   }
