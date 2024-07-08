@@ -15,7 +15,7 @@ const NavBar = () => {
 
       {/* nav link side start */}
       <div className="flex items-center gap-5 sm:gap-[25px]">
-        <ul className="flex items-center gap-5 sm:gap-[12px]">
+        <ul className="flex items-center gap-4 sm:gap-[12px]">
           <li>
             <Link href="#">
               <Image src={ShareIcon} width={42} height={42} alt="share-icon" />
