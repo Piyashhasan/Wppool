@@ -1,7 +1,9 @@
+import AboutWppool from "@/components/AboutWppool/AboutWppool";
 import AllCompanies from "@/components/AllCompanies/AllCompanies";
 import Banner from "@/components/Banner/Banner";
 import NavBar from "@/components/NavBar/NavBar";
 import PotentialFuture from "@/components/PotentialFututre/PotentialFuture";
+import StoriesIdeas from "@/components/StoriesIdeas/StoriesIdeas";
 
 const HomePage = () => {
   return (
@@ -30,6 +32,18 @@ const HomePage = () => {
         <PotentialFuture />
       </section>
       {/* --- Potential future listing section start --- */}
+
+      {/* --- Stories & ideas section start --- */}
+      <section className="container">
+        <StoriesIdeas />
+      </section>
+      {/* --- Stories & ideas section end --- */}
+
+      {/* --- About wppool section start --- */}
+      <section className="container">
+        <AboutWppool />
+      </section>
+      {/* --- About wppoo; section end --- */}
     </>
   );
 };
