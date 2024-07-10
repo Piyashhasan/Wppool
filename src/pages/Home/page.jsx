@@ -6,13 +6,14 @@ import Footer from "@/components/Footer/Footer";
 import NavBar from "@/components/NavBar/NavBar";
 import PortfolioCompany from "@/components/PortfolioCompany/PortfolioCompany";
 import PotentialFuture from "@/components/PotentialFututre/PotentialFuture";
+import StateUsa from "@/components/StateUsa/StateUsa";
 import StoriesIdeas from "@/components/StoriesIdeas/StoriesIdeas";
 
 const HomePage = () => {
   return (
     <>
       {/* --- Header section start --- */}
-      {/* <header className="px-[18px] pt-[18px] w-full">
+      <header className="px-[18px] pt-[18px] w-full">
         <div className="container bg-[#2042B6] rounded-[20px] overflow-hidden pb-[80px]">
           <nav>
             <NavBar />
@@ -21,7 +22,7 @@ const HomePage = () => {
             <Banner />
           </div>
         </div>
-      </header> */}
+      </header>
       {/* --- Header section end --- */}
 
       {/* --- Dashboard section start --- */}
@@ -31,39 +32,45 @@ const HomePage = () => {
       {/* --- Dashboard section end --- */}
 
       {/* --- All companies section start --- */}
-      {/* <section className="container">
+      <section className="container">
         <AllCompanies />
-      </section> */}
+      </section>
       {/* --- All companies section end --- */}
 
       {/* --- Potential future listings section start --- */}
-      {/* <section className="container">
+      <section className="container">
         <PotentialFuture />
-      </section> */}
+      </section>
       {/* --- Potential future listing section start --- */}
 
+      {/* --- State of USA section start --- */}
+      <section className="container">
+        <StateUsa />
+      </section>
+      {/* --- State of USA section start --- */}
+
       {/* --- Stories & ideas section start --- */}
-      {/* <section className="container">
+      <section className="container">
         <StoriesIdeas />
-      </section> */}
+      </section>
       {/* --- Stories & ideas section end --- */}
 
       {/* --- About wppool section start --- */}
-      {/* <section className="container">
+      <section className="container">
         <AboutWppool />
-      </section> */}
+      </section>
       {/* --- About wppool section end --- */}
 
       {/* --- Portfolio company section start --- */}
-      {/* <section className="container">
+      <section className="container">
         <PortfolioCompany />
-      </section> */}
+      </section>
       {/* --- Portfolio company section end --- */}
 
       {/* --- Footer section start --- */}
-      {/* <section className="footer-wrapper">
+      <section className="footer-wrapper">
         <Footer />
-      </section> */}
+      </section>
       {/* --- Footer section end --- */}
     </>
   );

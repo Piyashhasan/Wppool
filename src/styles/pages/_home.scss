@@ -129,6 +129,30 @@
   }
 }
 
+// --- state of USA section ---
+.state-usa {
+  .drop-down-btn {
+    .p-dropdown {
+      padding: 15px 20px;
+      background-color: #2042b6;
+      border: none !important;
+      outline: none !important;
+      .p-dropdown-label {
+        color: #fff;
+        font-size: 42px;
+        font-family: "Nantes";
+      }
+      .p-dropdown-trigger {
+        .p-icon {
+          path {
+            fill: #fff !important;
+          }
+        }
+      }
+    }
+  }
+}
+
 // --- all companies section ---
 .all-companies {
   @apply mt-[60px] bg-white rounded-[20px];
