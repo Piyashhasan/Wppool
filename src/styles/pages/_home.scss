@@ -91,6 +91,44 @@
   }
 }
 
+// --- Dashboard section ---
+.dashboard {
+  position: relative;
+  .active-link {
+    @apply bg-[#2042B6] text-white;
+  }
+  .das-share-icon {
+    border: 1px solid #afcd80;
+  }
+  .dash-nav-download-btn {
+    border: 1px solid #115cd9;
+  }
+
+  .drop-down-btn {
+    .p-dropdown {
+      padding: 9px 10px;
+      background-color: #2042b6;
+      border: none !important;
+      outline: none !important;
+      .p-dropdown-label {
+        color: #fff;
+        font-size: 12px;
+      }
+      .p-dropdown-trigger {
+        .p-icon {
+          path {
+            fill: #fff !important;
+          }
+        }
+      }
+    }
+  }
+
+  canvas {
+    cursor: pointer;
+  }
+}
+
 // --- all companies section ---
 .all-companies {
   @apply mt-[60px] bg-white rounded-[20px];

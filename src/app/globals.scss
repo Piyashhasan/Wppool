@@ -28,3 +28,12 @@ ul li {
   max-width: 1316px;
   margin: 0 auto;
 }
+
+.p-dropdown-panel {
+  margin-top: 10px;
+  .p-dropdown-items {
+    li {
+      padding: 10px;
+    }
+  }
+}
