@@ -1,6 +1,7 @@
 import AboutWppool from "@/components/AboutWppool/AboutWppool";
 import AllCompanies from "@/components/AllCompanies/AllCompanies";
 import Banner from "@/components/Banner/Banner";
+import Footer from "@/components/Footer/Footer";
 import NavBar from "@/components/NavBar/NavBar";
 import PortfolioCompany from "@/components/PortfolioCompany/PortfolioCompany";
 import PotentialFuture from "@/components/PotentialFututre/PotentialFuture";
@@ -23,34 +24,40 @@ const HomePage = () => {
       {/* --- Header section end --- */}
 
       {/* --- All companies section start --- */}
-      <section className="container">
+      {/* <section className="container">
         <AllCompanies />
-      </section>
+      </section> */}
       {/* --- All companies section end --- */}
 
       {/* --- Potential future listings section start --- */}
-      <section className="container">
+      {/* <section className="container">
         <PotentialFuture />
-      </section>
+      </section> */}
       {/* --- Potential future listing section start --- */}
 
       {/* --- Stories & ideas section start --- */}
-      <section className="container">
+      {/* <section className="container">
         <StoriesIdeas />
-      </section>
+      </section> */}
       {/* --- Stories & ideas section end --- */}
 
       {/* --- About wppool section start --- */}
-      <section className="container">
+      {/* <section className="container">
         <AboutWppool />
-      </section>
+      </section> */}
       {/* --- About wppool section end --- */}
 
       {/* --- Portfolio company section start --- */}
-      <section className="container">
+      {/* <section className="container">
         <PortfolioCompany />
-      </section>
+      </section> */}
       {/* --- Portfolio company section end --- */}
+
+      {/* --- Footer section start --- */}
+      {/* <section className="footer-wrapper">
+        <Footer />
+      </section> */}
+      {/* --- Footer section end --- */}
     </>
   );
 };

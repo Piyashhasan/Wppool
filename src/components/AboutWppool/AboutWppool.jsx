@@ -22,7 +22,7 @@ const AboutWppool = () => {
             fugiat iusto fuga praesentium optio, eaque rerum! Provident
             similique accusantium nemo autem.
           </p>
-          <button className="mt-[30px] px-[18px] py-[18px] border-none outline-none rounded-full bg-[#2042B6] text-white text-[16px] font-[400]">
+          <button className="mt-[30px] px-[18px] py-[18px] border-none outline-none rounded-full bg-[#2042B6] text-white text-[16px] font-[400] cursor-pointer hover:bg-blue-700">
             Contact WPPOOL
           </button>
         </div>
