@@ -131,6 +131,11 @@
 
 // --- state of USA section ---
 .state-usa {
+  background-image: url("../../../public/images/state-usa-bg.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  width: 100%;
   .drop-down-btn {
     .p-dropdown {
       padding: 15px 20px;
@@ -146,6 +151,62 @@
         .p-icon {
           path {
             fill: #fff !important;
+          }
+        }
+      }
+    }
+  }
+  .slider-container {
+    .slick-prev {
+      left: 0px !important;
+      top: 108% !important;
+      &::before {
+        font-size: 56px !important;
+        color: #fff !important;
+      }
+      &.slick-disabled {
+        &::before {
+          opacity: 1 !important;
+        }
+      }
+    }
+
+    .slick-next {
+      right: -25px !important;
+      left: 70px !important;
+      top: 108% !important;
+      &::before {
+        font-size: 56px !important;
+        color: #fff !important;
+      }
+      &.slick-disabled {
+        &::before {
+          opacity: 1 !important;
+        }
+      }
+    }
+
+    .slick-dots {
+      display: none !important;
+    }
+
+    .drop-down-btn {
+      .p-dropdown {
+        padding: 12px 12px;
+        background-color: #fff;
+        border: none !important;
+        outline: none !important;
+        .p-dropdown-label {
+          color: #000;
+          font-size: 16px;
+          font-family: "Nantes";
+        }
+        .p-dropdown-trigger {
+          width: 1rem;
+          .p-icon {
+            path {
+              fill: #000 !important;
+            }
           }
         }
       }
