@@ -37,3 +37,16 @@ ul li {
     }
   }
 }
+
+// --- responsive custom breakpoint ---
+@media (min-width: 320px) and (max-width: 1023px) {
+  .space-horizontal {
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1320px) {
+  .space-horizontal {
+    padding: 0 20px;
+  }
+}

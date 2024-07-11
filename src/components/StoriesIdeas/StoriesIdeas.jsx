@@ -3,17 +3,17 @@ import { storiesIdeasData } from "@/utils/storiesIdeasData";
 
 const StoriesIdeas = () => {
   return (
-    <div className="mt-[190px] px-[68px] mb-[100px]">
-      <div className="">
-        <h2 className="font-['Nantes'] text-[48px] text-[#191618] font-[400]">
+    <div className="mt-[190px] xl:px-[68px] mb-[100px]">
+      <div>
+        <h2 className="font-['Nantes'] text-[36px] lg:text-[48px] text-[#191618] font-[400]">
           Stories & Ideas
         </h2>
-        <p className="mt-[18px] text-[20px] text-[#191618] font-[400]">
+        <p className="mt-[18px] text-[16px] lg:text-[20px] text-[#191618] font-[400]">
           The latest news and updates
         </p>
       </div>
 
-      <div className="grid grid-cols-3 items-center gap-x-[20px] gap-y-[80px] mt-[86px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-x-[20px] gap-y-[80px] mt-[86px]">
         {storiesIdeasData.map((data, index) => {
           return (
             <div
@@ -42,7 +42,7 @@ const StoriesIdeas = () => {
                 <p className="text-[16px] text-[#191618] font-['Nantes'] font-[400]">
                   {data?.description}
                 </p>
-                <button className="absolute bottom-5 border-none outline-none px-[12px] py-[10px] text-white bg-[#2042B6] rounded-full   cursor-pointer hover:bg-blue-700">
+                <button className="absolute bottom-2 lg:bottom-5 border-none outline-none px-[12px] py-[10px] text-white bg-[#2042B6] rounded-full cursor-pointer hover:bg-blue-700">
                   {data?.btnText}
                 </button>
               </div>

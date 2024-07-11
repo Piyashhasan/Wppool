@@ -36,9 +36,9 @@ const Dashboard = () => {
   }, [bindWindowResizeListener, unbindWindowResizeListener]);
 
   return (
-    <div className="mt-[60px] bg-white rounded-[10px] py-[20px] px-[23px] dashboard">
+    <div className="mt-[60px] bg-white rounded-[10px] py-[20px] px-[15px] md:px-[23px] dashboard">
       {/* -- Dashboard Nav bar */}
-      <DashboardNavBar />
+      {/* <DashboardNavBar /> */}
       {/* -- Dashboard Nav bar */}
 
       {/* --- Dashboard Main content --- */}
@@ -48,7 +48,7 @@ const Dashboard = () => {
             <DashboardSidebar />
           </div>
 
-          <main className="w-full px-[8px] pt-[8px] relative">
+          <main className="w-full sm:px-[8px] pt-[8px] relative">
             {/* --- Side bar for mobile device --- */}
             {isSidebarVisible && windowSize?.width <= 1023 && (
               <div className="absolute top-0 left-0 z-10">

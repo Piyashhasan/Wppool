@@ -212,6 +212,53 @@
       }
     }
   }
+  @media (min-width: 640px) and (max-width: 1023px) {
+    & {
+      .drop-down-btn {
+        .p-dropdown {
+          padding: 8px 18px;
+          .p-dropdown-label {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 639px) {
+    & {
+      background-image: none;
+      .drop-down-btn {
+        .p-dropdown {
+          padding: 8px 18px;
+          .p-dropdown-label {
+            font-size: 30px;
+          }
+        }
+      }
+      .slider-container {
+        .slick-prev {
+          &::before {
+            font-size: 40px !important;
+          }
+        }
+        .slick-next {
+          left: 45px !important;
+          &::before {
+            font-size: 40px !important;
+          }
+        }
+        .drop-down-btn {
+          .p-dropdown {
+            padding: 10px;
+            .p-dropdown-label {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // --- all companies section ---
@@ -267,6 +314,15 @@
           }
         }
       }
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 640px) {
+    .company-search-input {
+      padding: 10px 0;
+      padding-right: 19px;
+      padding-left: 52px;
+      font-size: 16px;
     }
   }
 }

@@ -7,9 +7,9 @@ const StateUsa = () => {
   const [selectData, setSelectData] = useState(null);
   const selectorDate = [{ name: "2025" }, { name: "2026" }, { name: "2027" }];
   return (
-    <div className="mt-[155px] px-[68px] state-usa">
+    <div className="mt-[155px] xl:px-[68px] state-usa">
       <div>
-        <h2 className="font-['Nantes'] font-[400] text-[48px] text-[#191618]">
+        <h2 className="font-['Nantes'] font-[400] text-[36px] lg:text-[48px] text-[#191618]">
           State of USA
         </h2>
         <div className="drop-down-btn mt-[20px]">
@@ -22,7 +22,7 @@ const StateUsa = () => {
             className="w-[200px] rounded-full text-white"
           />
         </div>
-        <p className="mt-[15px] text-[16px] font-[400]">
+        <p className="mt-[15px] text-[14px] sm:text-[16px] font-[400]">
           Click through the slides or download the report to view natively on
           your device.
         </p>

@@ -19,12 +19,12 @@ const DashboardMainContent = ({ handleToggleSidebar, isSidebarVisible }) => {
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-[5px]">
           <Image width={46} height={41} src={Union} alt="union icon" />
-          <h2 className="font-['Nantes'] font-[400] text-[36px] text-[#191618]">
+          <h2 className="font-['Nantes'] font-[400] text-[28px] sm:text-[36px] text-[#191618]">
             The WPPOOL Index
           </h2>
         </div>
         <div
-          className="cursor-pointer flex items-center lg:hidden"
+          className="cursor-pointer flex sm:items-center lg:hidden"
           onClick={handleToggleSidebar}
         >
           {isSidebarVisible ? (
@@ -37,7 +37,7 @@ const DashboardMainContent = ({ handleToggleSidebar, isSidebarVisible }) => {
       {/* --- title end --- */}
 
       {/* --- tracking information start --- */}
-      <div className="mt-[10px] grid grid-cols-4 gap-[20px] pr-[45px]">
+      <div className="mt-[30px] grid grid-cols-1 gap-[20px] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:mt-[10px]  xl:grid-cols-4 xl:pr-[45px]">
         <div className="pl-[14px] pr-[10px] py-[14px] bg-[#F3F3F3] rounded-[6px] flex items-center justify-between">
           <h3 className="font-['Nantes'] font-[400] text-[30px] text-[#FC714D]">
             +66.2%
@@ -89,8 +89,8 @@ const DashboardMainContent = ({ handleToggleSidebar, isSidebarVisible }) => {
       {/* --- tracking information end --- */}
 
       {/* --- filter button start --- */}
-      <div className="mt-[21px] flex items-center justify-between pr-[45px]">
-        <div className="flex items-center gap-[13px]">
+      <div className="mt-[21px] flex flex-wrap items-center justify-center sm:justify-between xl:pr-[45px]">
+        <div className="flex flex-wrap justify-center items-center gap-[13px]">
           <div className="drop-down-btn">
             <Dropdown
               value={selector}
@@ -98,7 +98,7 @@ const DashboardMainContent = ({ handleToggleSidebar, isSidebarVisible }) => {
               options={selectorItems}
               optionLabel="name"
               placeholder="Selectors"
-              className="w-[178px] rounded-full text-white"
+              className="w-[135px] sm:w-[135px] md:w-[178px] rounded-full text-white"
             />
           </div>
           <div className="drop-down-btn">
@@ -108,11 +108,11 @@ const DashboardMainContent = ({ handleToggleSidebar, isSidebarVisible }) => {
               options={selectorItems}
               optionLabel="name"
               placeholder="Type of IPO"
-              className="w-[178px] rounded-full text-white"
+              className="w-[135px] sm:w-[135px] md:w-[178px] rounded-full text-white"
             />
           </div>
         </div>
-        <div>
+        <div className="mt-5 sm:mt-0">
           <div className="bg-[#EFF3F6] flex items-center gap-[10px] py-[3px] pl-[52px] pr-[11px] rounded-full">
             <button className="border-none px-[9px] py-[8px] rounded-full text-[#748DA1] text-[12px] cursor-pointer">
               1Y
@@ -135,7 +135,7 @@ const DashboardMainContent = ({ handleToggleSidebar, isSidebarVisible }) => {
       {/* --- filter button end --- */}
 
       {/* --- graph --- */}
-      <div className="pr-[45px] mt-[30px]">
+      <div className="xl:pr-[45px] mt-[30px]">
         <div className="w-full max-h-[350px]">
           <LineChart />
         </div>

@@ -4,13 +4,13 @@ import React from "react";
 
 const PortfolioCompany = () => {
   return (
-    <div className="px-[68px] mt-[126px]">
+    <div className="xl:px-[68px] mt-[126px]">
       <div>
-        <h2 className="font-['Nantes'] font-[400] text-[48px] text-[#191618]">
+        <h2 className="font-['Nantes'] font-[400] text-[36px] lg:text-[48px] text-[#191618]">
           Selected WPPOOL Portfolio Companies
         </h2>
       </div>
-      <div className="grid grid-cols-5 gap-5 mt-[48px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5 mt-[48px]">
         {portfolioCompaniesData.map((data, index) => {
           return (
             <div

@@ -13,7 +13,7 @@ const HomePage = () => {
   return (
     <>
       {/* --- Header section start --- */}
-      <header className="px-[18px] pt-[18px] w-full">
+      <header className="w-full space-horizontal">
         <div className="container bg-[#2042B6] rounded-[20px] overflow-hidden pb-[80px]">
           <nav>
             <NavBar />
@@ -26,43 +26,43 @@ const HomePage = () => {
       {/* --- Header section end --- */}
 
       {/* --- Dashboard section start --- */}
-      <section className="container">
+      <section className="container space-horizontal">
         <Dashboard />
       </section>
       {/* --- Dashboard section end --- */}
 
       {/* --- All companies section start --- */}
-      <section className="container">
+      <section className="container space-horizontal">
         <AllCompanies />
       </section>
       {/* --- All companies section end --- */}
 
       {/* --- Potential future listings section start --- */}
-      <section className="container">
+      <section className="container space-horizontal">
         <PotentialFuture />
       </section>
       {/* --- Potential future listing section start --- */}
 
       {/* --- State of USA section start --- */}
-      <section className="container">
+      <section className="container space-horizontal">
         <StateUsa />
       </section>
       {/* --- State of USA section start --- */}
 
       {/* --- Stories & ideas section start --- */}
-      <section className="container">
+      <section className="container space-horizontal">
         <StoriesIdeas />
       </section>
       {/* --- Stories & ideas section end --- */}
 
       {/* --- About wppool section start --- */}
-      <section className="container">
+      <section className="container space-horizontal">
         <AboutWppool />
       </section>
       {/* --- About wppool section end --- */}
 
       {/* --- Portfolio company section start --- */}
-      <section className="container">
+      <section className="container space-horizontal">
         <PortfolioCompany />
       </section>
       {/* --- Portfolio company section end --- */}

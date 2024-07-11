@@ -26,7 +26,7 @@ const CarouselItems = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 767,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -65,10 +65,10 @@ const CarouselItems = () => {
           return (
             <div
               key={index}
-              className="object-cover object-top max-w-[580px] overflow-hidden rounded-[6px] mt-[20px]"
+              className="sm:object-cover sm:object-top sm:max-w-[580px] sm:overflow-hidden rounded-[6px] mt-[20px]"
             >
               <Image
-                className="max-w-[580px] object-cover object-top overflow-hidden rounded-[6px]"
+                className="px-1 w-full h-full object-contain sm:max-w-[580px] sm:object-cover sm:object-top overflow-hidden rounded-[6px]"
                 src={item?.img}
                 alt={item?.alt}
               />
@@ -76,8 +76,8 @@ const CarouselItems = () => {
           );
         })}
       </Slider>
-      <div className="absolute bottom-[88px] left-[150px]">
-        <div className="flex items-center gap-[10px]">
+      <div className="absolute left-[100px] bottom-[108px] sm:bottom-[98px] lg:bottom-[88px] sm:left-[150px]">
+        <div className="flex items-center gap-[8px] sm:gap-[10px]">
           <small>Pages</small>
           <div className="drop-down-btn">
             <Dropdown
@@ -86,14 +86,14 @@ const CarouselItems = () => {
               options={searchInput}
               optionLabel="slideNo"
               placeholder="1 and 2"
-              className="w-[130px] rounded-full text-white"
+              className="w-[100px] sm:w-[130px] rounded-full text-white"
             />
           </div>
           <small>of 37</small>
         </div>
       </div>
-      <div className="absolute right-[70px] mt-[15px]">
-        <button className="border-none outline-none py-[23px] px-[20px] rounded-full bg-[#2042B6] text-white cursor-pointer">
+      <div className="absolute bottom-[40px] sm:right-[5px] sm:bottom-[98px] md:right-[70px] lg:bottom-[75px]">
+        <button className="border-none outline-none px-[20px] py-[12px] sm:py-[14px] lg:py-[23px] lg:px-[20px] rounded-full bg-[#2042B6] text-white cursor-pointer">
           Download the 2023 Report
         </button>
       </div>

@@ -6,15 +6,15 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="footer-container">
-      <div className="mt-[58px] pt-[77px] pb-[73px] pr-[77px]">
-        <div className="grid grid-cols-2">
+    <div className="footer-container space-horizontal">
+      <div className="mt-[58px] pt-[77px] pb-[73px] lg:pr-[77px]">
+        <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="">
-            <h2 className="font-['Nantes'] font-[400] text-[36px] text-black pr-[100px]">
+            <h2 className="font-['Nantes'] font-[400] text-[28px] text-black md:text-[24px] lg:text-[36px] lg:pr-[34px] xl:pr-[100px]">
               Experience remarkable WordPress products with a new level of
               power, beauty, and human-centered designs.
             </h2>
-            <div className="mt-[300px]">
+            <div className="hidden md:mt-[440px] lg:mt-[380px] xl:mt-[300px] md:block">
               <div className="flex items-center gap-[38px] text-[14px]  font-semibold">
                 <p>
                   <Link className="text-[#9FA0A1]" href="#">
@@ -44,10 +44,12 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="flex justify-between gap-[116px]">
-            <div>
-              <p className="font-bold text-[20px] text-[#9FA0A1]">Jump to</p>
-              <ul className="mt-[16px] flex flex-col gap-[16px] text-[#115CD9] text-[20px]">
+          <div className="flex flex-col  justify-between gap-[50px] sm:flex-row sm:gap-[116px] md:gap-[10px] lg:gap-[116px] sm:mt-[50px] md:mt-0">
+            <div className="min-w-[125px]">
+              <p className="mt-[50px] font-bold text-[20px] text-[#9FA0A1] sm:mt-0">
+                Jump to
+              </p>
+              <ul className="mt-[16px] flex flex-col gap-[20px] sm:gap-[16px] text-[#115CD9] text-[20px]">
                 <li>
                   <Link className="text-[#115CD9]" href="#">
                     About Us
@@ -116,6 +118,37 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
+        {/* --- visible for mobile device for better view only --- */}
+        <div className="mt-[50px] md:hidden">
+          <div className="flex items-center justify-between sm:justify-start gap-[20px] text-[14px] font-semibold">
+            <p>
+              <Link className="text-[#9FA0A1]" href="#">
+                ©2024
+              </Link>
+            </p>
+            <p>
+              <Link className="text-[#9FA0A1]" href="#">
+                Terms of Use
+              </Link>
+            </p>
+            <p>
+              <Link className="text-[#9FA0A1]" href="#">
+                Privacy Policy
+              </Link>
+            </p>
+          </div>
+          <p className="mt-[21px] text-[14px] font-[400]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+            voluptatum laborum numquam blanditiis harum quisquam eius sed odit
+            fugiat iusto fuga praesentium optio, eaque rerum! Provident
+            similique accusantium nemo autem. Veritatis obcaecati tenetur iure
+            eius earum ut molestias architecto voluptate aliquam nihil, eveniet
+            aliquid culpa officia aut! Impedit sit sunt quaera
+          </p>
+        </div>
+        {/* --- visible for mobile device for better view only --- */}
       </div>
     </div>
   );

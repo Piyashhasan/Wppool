@@ -8,11 +8,11 @@ const CompaniesTable = () => {
   const [companyInfos] = useState(companyTableData);
 
   return (
-    <div className="mt-[50px] px-[30px]">
+    <div className="mt-[10px] px-[30px]">
       <DataTable
         value={companyInfos}
         stripedRows
-        tableStyle={{ minWidth: "50rem" }}
+        tableStyle={{ minWidth: "73rem" }}
       >
         <Column
           className="rounded-l-[6px]"
