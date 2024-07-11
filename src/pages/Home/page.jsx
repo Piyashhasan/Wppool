@@ -13,16 +13,16 @@ const HomePage = () => {
   return (
     <>
       {/* --- Header section start --- */}
-      <header className="w-full space-horizontal">
-        <div className="container bg-[#2042B6] rounded-[20px] overflow-hidden pb-[80px]">
-          <nav>
-            <NavBar />
-          </nav>
-          <div>
-            <Banner />
-          </div>
+      <nav className="sticky top-2 z-[40] max-w-[1316px] mx-auto space-horizontal rounded-t-[20px]">
+        <NavBar />
+      </nav>
+
+      <main className="w-full space-horizontal">
+        <div className="container bg-[#2042B6] rounded-[20px] pb-[80px]">
+          <Banner />
         </div>
-      </header>
+      </main>
+
       {/* --- Header section end --- */}
 
       {/* --- Dashboard section start --- */}

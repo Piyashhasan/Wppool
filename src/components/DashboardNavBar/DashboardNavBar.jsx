@@ -1,6 +1,6 @@
 import Image from "next/image";
 import DasLogo from "../../../public/images/das-logo.svg";
-import ShareIcon from "../../../public/images/das-share.svg";
+import DasShareIcon from "../../../public/images/das-share.svg";
 import Link from "next/link";
 import NavToggleBtn from "../../../public/images/dash-toggle.svg";
 
