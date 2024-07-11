@@ -1,7 +1,17 @@
+"use client";
 import Image from "next/image";
 import Rectangle from "../../../public/images/rectangle.svg";
+import { IoArrowDown } from "react-icons/io5";
+import Link from "next/link";
 
 const Banner = () => {
+  const handleLinkClick = (event, sectionId) => {
+    event.preventDefault();
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className="banner-section">
       <div className="px-[18px] py-[18px] relative">
@@ -45,6 +55,12 @@ const Banner = () => {
             </p>
           </div>
         </div>
+
+        <Link href="#footer" onClick={(e) => handleLinkClick(e, "footer")}>
+          <div className="bg-white absolute bottom-[-240px] mr-2 w-[40px] h-[40px] sm:bottom-[-120px] lg:bottom-[-40px] right-0 sm:mr-[20px] lg:mr-[45px] sm:w-[64px] sm:h-[64px] rounded-full flex items-center justify-center shadow-lg z-30">
+            <IoArrowDown className="text-[20px] text-[#2042B6]" />
+          </div>
+        </Link>
       </div>
     </div>
   );

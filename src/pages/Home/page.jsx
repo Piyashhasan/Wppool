@@ -18,7 +18,7 @@ const HomePage = () => {
       </nav>
 
       <main className="w-full space-horizontal">
-        <div className="container bg-[#2042B6] rounded-[20px] pb-[80px]">
+        <div className="container bg-[#2042B6] rounded-[20px] pb-[80px] sm:pb-[135px] lg:pb-[80px]">
           <Banner />
         </div>
       </main>
@@ -26,49 +26,49 @@ const HomePage = () => {
       {/* --- Header section end --- */}
 
       {/* --- Dashboard section start --- */}
-      <section className="container space-horizontal">
+      <section id="wppool-index" className="container space-horizontal">
         <Dashboard />
       </section>
       {/* --- Dashboard section end --- */}
 
       {/* --- All companies section start --- */}
-      <section className="container space-horizontal">
+      <section id="all-companies" className="container space-horizontal">
         <AllCompanies />
       </section>
       {/* --- All companies section end --- */}
 
       {/* --- Potential future listings section start --- */}
-      <section className="container space-horizontal">
+      <section id="future-listings" className="container space-horizontal">
         <PotentialFuture />
       </section>
       {/* --- Potential future listing section start --- */}
 
       {/* --- State of USA section start --- */}
-      <section className="container space-horizontal">
+      <section id="state-of-usa" className="container space-horizontal">
         <StateUsa />
       </section>
       {/* --- State of USA section start --- */}
 
       {/* --- Stories & ideas section start --- */}
-      <section className="container space-horizontal">
+      <section id="stories-ideas" className="container space-horizontal">
         <StoriesIdeas />
       </section>
       {/* --- Stories & ideas section end --- */}
 
       {/* --- About wppool section start --- */}
-      <section className="container space-horizontal">
+      <section id="about-wppool" className="container space-horizontal">
         <AboutWppool />
       </section>
       {/* --- About wppool section end --- */}
 
       {/* --- Portfolio company section start --- */}
-      <section className="container space-horizontal">
+      <section id="portfolio-companies" className="container space-horizontal">
         <PortfolioCompany />
       </section>
       {/* --- Portfolio company section end --- */}
 
       {/* --- Footer section start --- */}
-      <section className="footer-wrapper">
+      <section id="footer" className="footer-wrapper">
         <Footer />
       </section>
       {/* --- Footer section end --- */}

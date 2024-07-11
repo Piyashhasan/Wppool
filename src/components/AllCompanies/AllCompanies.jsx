@@ -41,4 +41,3 @@ const AllCompanies = () => {
 };
 
 export default AllCompanies;
-// py-[17px] px-[19px] border-[1px] outline-none border-[#DADADA]

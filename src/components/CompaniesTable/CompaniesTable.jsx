@@ -12,6 +12,8 @@ const CompaniesTable = () => {
       <DataTable
         value={companyInfos}
         stripedRows
+        scrollable
+        scrollHeight="435px"
         tableStyle={{ minWidth: "73rem" }}
       >
         <Column

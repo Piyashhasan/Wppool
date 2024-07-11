@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import DashboardSidebar from "../DashboardSidebar/DashboardSidebar";
 import { useResizeListener } from "primereact/hooks";
-import DashboardNavBar from "../DashboardNavBar/DashboardNavBar";
 import DashboardMainContent from "../DashboardMainContent/DashboardMainContent";
 
 const Dashboard = () => {
@@ -37,10 +36,6 @@ const Dashboard = () => {
 
   return (
     <div className="mt-[60px] bg-white rounded-[10px] py-[20px] px-[15px] md:px-[23px] dashboard">
-      {/* -- Dashboard Nav bar */}
-      {/* <DashboardNavBar /> */}
-      {/* -- Dashboard Nav bar */}
-
       {/* --- Dashboard Main content --- */}
       <div className="mt-[20px] rounded-[10px] min-h-[600px]">
         <div className="flex gap-x-[24px] min-h-[600px]">
